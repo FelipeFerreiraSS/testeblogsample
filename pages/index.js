@@ -1,8 +1,6 @@
 import React from "react";
 import { default as NextLink } from 'next/link'
 
-import { posts } from 'styles'
-
 
 //importações
 import Prismic from '@prismicio/client'
@@ -15,22 +13,22 @@ import useUpdatePreviewRef from '../utils/useUpdatePreviewRef';
 const Home = ({posts}) => {
 	console.log(posts)
     return (
-    <> 
+    <main style={{maxWidth: "1000px", margin: "auto"}}> 
       <h1>teste Home page</h1>
       <NextLink href="/blog">
       	<a>link para blog</a>
       </NextLink>
       <h2>Teste de posts:</h2>
       {posts.map((post) => (
-      	<div key={post.id}>
-      		<h3>{RichText.asText(post.data.title)}</h3> 
-      		<p>{RichText.asText(post.data.resume)}</p>
-      		<img src={post.data.capa.url} alt=""/>
+      	<div key={post.id} style={{display: "flex"}}>
+      		<div style={{display: "bloq"}}>
+      			<h3>{RichText.asText(post.data.title)}</h3>
+      			<p>{RichText.asText(post.data.resume)}</p>
+      		</div>
+      		<img src={post.data.capa.url} alt="" style={{width: "200px"}}/>
         </div>
-      ))}
-      {/*<h3>{RichText.asText(posts[1].data.title)}</h3>*/}
-      
-    </>
+      ))}      
+    </main>
     );
   }
 ;
