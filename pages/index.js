@@ -9,9 +9,11 @@ import { Client } from "../utils/prismicHelpers";
 import useUpdatePreviewRef from '../utils/useUpdatePreviewRef';
 
 
-
 const Home = ({posts}) => {
+
+
 	console.log(posts)
+
     return (
     <main style={{maxWidth: "1000px", margin: "auto"}}> 
       <h1>teste Home page</h1>
@@ -19,15 +21,18 @@ const Home = ({posts}) => {
       	<a>link para blog</a>
       </NextLink>
       <h2>Teste de posts:</h2>
+
       {posts.map((post) => (
       	<div key={post.id} style={{display: "flex"}}>
       		<div style={{display: "bloq"}}>
       			<h3>{RichText.asText(post.data.title)}</h3>
+      			<p>{post.data.date}</p>
       			<p>{RichText.asText(post.data.resume)}</p>
       		</div>
       		<img src={post.data.capa.url} alt="" style={{width: "200px"}}/>
         </div>
-      ))}      
+      ))}
+
     </main>
     );
   }
