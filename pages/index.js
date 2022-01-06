@@ -17,6 +17,11 @@ const Home = ({posts}) => {
     return (
     <main style={{maxWidth: "1000px", margin: "auto"}}> 
       <h1>teste Home page</h1>
+      <h2>Categorias</h2>
+      <NextLink href="/categories/front-end">
+      	<a>Front-end</a>
+      </NextLink>
+      <h3>blog original</h3>
       <NextLink href="/blog">
       	<a>link para blog</a>
       </NextLink>
