@@ -21,6 +21,9 @@ const Home = ({posts}) => {
       <NextLink href="/categories/front-end">
       	<a>Front-end</a>
       </NextLink>
+      <NextLink href="/categories/back-end">
+      	<a>Back-end</a>
+      </NextLink>
       <h3>blog original</h3>
       <NextLink href="/blog">
       	<a>link para blog</a>
