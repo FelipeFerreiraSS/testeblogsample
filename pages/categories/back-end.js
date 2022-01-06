@@ -18,6 +18,10 @@ const Home = ({posts}) => {
     <main style={{maxWidth: "1000px", margin: "auto"}}> 
       <h1>Front-end</h1>
 
+      <NextLink href="/">
+      	<a>Home</a>
+      </NextLink>
+
       {posts.map((post) => (
       	<div key={post.id} style={{display: "flex"}}>
       		<div style={{display: "bloq"}}>
