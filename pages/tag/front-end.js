@@ -27,7 +27,7 @@ const Home = ({posts}) => {
       		<div style={{display: "bloq"}}>
       			<h3>{RichText.asText(post.data.title)}</h3>
       			<p>{post.data.date}</p>
-                <p>{post.tags}</p>
+                        <p>{post.tags}</p>
       			<p>{RichText.asText(post.data.resume)}</p>
       		</div>
       		<img src={post.data.capa.url} alt="" style={{width: "200px"}}/>
