@@ -17,7 +17,10 @@ const Home = ({posts}) => {
 	// const date = Date(posts[0].data.date)
 	// const displayDate = format(date,'dd, MMMM, yyyy');
 
-	console.log()
+
+	const example_date = posts[0].data.date
+	const exampleDate = Date(document.data.example_date).toString;
+	console.log(posts[0].data.date)
 
     return (
 	    <main style={{maxWidth: "1000px", margin: "auto"}}> 
