@@ -19,6 +19,7 @@ import { postStyles } from "../../styles";
  * Post page component
  */
 const Post = ({ post, previewRef }) => {
+  console.log(post.data.body)
   const router = useRouter()
   if (router.isFallback) {
     return <Loader />

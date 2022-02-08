@@ -19,7 +19,7 @@ const Home = ({posts}) => {
 
 
 	const example_date = posts[0].data.date
-	const exampleDate = Date(document.data.example_date).toString;
+	// const exampleDate = Date(document.data.example_date).toString;
 	console.log(posts[0].data.date)
 
     return (
